@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+*{
+    margin : 0px;
+    padding:0px;
+}
+body{
+    background: linear-gradient(rgb(0 0 0 / 0%),rgb(0 0 0 / 82%)),url(/static/images/bg.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+.heading{
+    height:130px;
+    background-color: indigo;
+}
+.heading h3{
+    color: white;
+    text-align: center;
+    padding: 40px;
+    font-size: 2.3rem;
+}
+.container{
+    /* background-color: tomato; */
+    height:fit-content;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.first{
+    /* background-color: blueviolet; */
+    width:50%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+.first h4{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2.2rem;
+    padding: 11px 3px;
+    text-align: center;
+    color: black;
+}
+.navbar h5{
+    font-size: 2.2rem;
+    padding: 11px 3px;
+    text-align: center;
+    color: black;
+}
+.form-info{
+    /* background-color: red; */
+    display: flex;
+    margin: 16px 5px 17px 41px;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* height:63px; */
+    /* width:324px; */
+}
+.form-info .input_task{
+    padding:10px;   
+    margin: 3px 32px 3px 17px ; 
+    width:70%;
+    border: 4px solid white ;
+    border-radius: 13px;
+    outline: none;
+}
+.form-info input{
+    font-size: 1rem;
+}
+.form-info .btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.fa-color{
+    color:white;
+}
+.alert{
+    padding:10px;   
+    margin: 4px 6px  0px 230px;
+    width: 20%;
+    border: 4px solid white ;
+    border-radius: 13px;
+    background-color: #ffdd11;
+    outline: none;
+}
+.navbar{
+    background-color:white;
+    height: fit-content;
+    color:black;
+    margin:13px 10px 7px 50px;
+    width: 70%;
+    border :2px solid #d8d6b5;
+    border-radius: 47px;
+    outline: none;
+    padding: 29px 5px;
+}
+/* .navbar ul{
+    padding:3px;
+} */
+.navbar li{
+    padding: 5px 45px;
+    list-style: auto;
+    font-size:1.5rem;
+    margin : 0px 34px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* .li_icon{
+    padding: 0px 10px;
+} */
+.li_icon i{
+    padding: 0px 12px;
+    margin-right: 0px;
+    color:black;
+    cursor:pointer;
+}
+.second{
+    /* background-color: crimson; */
+    width:50%;
+}

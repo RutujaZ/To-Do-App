@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../static/styleHome.css">
+        <script src="https://kit.fontawesome.com/a4f28bd14a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="heading">
+            <h3>Welcome to our To-Do App</h3>
+        </section>
+        <div class="container">
+            <section class="first">
+                <h4>TASKS TO DO</h4>
+                <form action = "home" method="POST">
+                    <div class="form-info">
+                        <input class="input_task" type ="text" name="todo" placeholder="Add a Task">
+                        <button class="btn" type="submit"><i class="far fa-plus-square fa-3x fa-color"></i></button>
+                    </div>
+                </form>
+                <% if(msg.length>0){ %>
+                    <div class="alert">
+                        <h3><%= msg %></h3>
+                    </div>
+                <% } %>  
+                <nav class="navbar">
+                    <ul>
+                        <%if(taskList.length>0){taskList.forEach(task=>{ %>
+                            <li><%=task.todo%> 
+                                <div class="li_icon">
+                                    <a class="btn" href="home/delete/<%=task._id%>"><i class="far fa-check-circle"></i></a>
+                                </div>
+                            </li>
+                        <%})}else{ %>
+                            <h5>Nothing to do</h5>  
+                        <% } %> 
+                    </ul>
+                </nav>
+            </section>
+        </div>
+    </body>
+</html>
